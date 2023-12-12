@@ -163,6 +163,8 @@ cython_debug/
 *.pt
 datasets/
 runs/
+yolov8n_saved_model/
+*.onnx
 
 #DOTA
 DOTA_devkit/

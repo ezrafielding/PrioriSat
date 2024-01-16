@@ -168,3 +168,6 @@ yolov8n_saved_model/
 
 #DOTA
 DOTA_devkit/
+
+# Project Specific
+best_saved_model/

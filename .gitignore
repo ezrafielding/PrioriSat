@@ -171,4 +171,5 @@ DOTA_devkit/
 
 # Project Specific
 best_saved_model/
-llama-2*/
+YOLO/llama-2*/
+YOLO/detect/

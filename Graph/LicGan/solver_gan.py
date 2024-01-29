@@ -7,10 +7,10 @@ import datetime
 import torch
 import torch.nn.functional as F
 from transformers import BertModel, RobertaModel
-from score import score
+from LicGan.score import score
 
-from models_gan import Generator, Discriminator, gumbel_sigmoid
-from graph_data import get_loaders, SyntheticGraphDataset
+from LicGan.models_gan import Generator, Discriminator, gumbel_sigmoid
+from LicGan.graph_data import get_loaders, SyntheticGraphDataset
 import numpy as np
 from tqdm import tqdm
 import sys

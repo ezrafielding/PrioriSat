@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
-from layers import GraphConvolution, GraphAggregation, MultiDenseLayer, PositionalEncoder
+from LicGan.layers import GraphConvolution, GraphAggregation, MultiDenseLayer, PositionalEncoder
     
 class Generator(nn.Module):
     """Generator network for NLP conditioned graph gen."""

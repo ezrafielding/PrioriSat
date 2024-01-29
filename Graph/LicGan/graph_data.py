@@ -10,7 +10,7 @@ p = inflect.engine()
 
 import sys
 sys.path.insert(0, '../GraphGen')
-import recognize
+import GraphGen.recognize as recognize
 
 class SyntheticGraphDataset(data.Dataset):
     """Dataset Class for synthetic graph dataset."""
@@ -26,8 +26,11 @@ class SyntheticGraphDataset(data.Dataset):
             self.adj_matrix = pickle.load(f)
         with open(os.path.join(data_dir, 'properties.pkl'), 'rb') as f:
             self.properties = pickle.load(f)
+        with open(os.path.join(data_dir, 'descriptions.pkl'), 'rb') as f:
+            self.descriptions = pickle.load(f)
 
         assert len(self.adj_matrix) == len(self.properties)
+        assert len(self.adj_matrix) == len(self.descriptions)
 
         for i in range(len(self.adj_matrix)):
             node_size = self.adj_matrix[i].shape[0]
@@ -86,7 +89,7 @@ class SyntheticGraphDataset(data.Dataset):
                 succ.append(None)
         return succ
 
-    def _gen_text(self, property, rng=None):
+    def _gen_text(self, property, description, rng=None):
         property_list = self._get_property_list(property)
         # keeps node number and edges compulsorily (can change behavior by changing idx line alone)
         if rng is None:
@@ -98,21 +101,16 @@ class SyntheticGraphDataset(data.Dataset):
             idx = [0,1] + list(rng.choice(len(property_list) - 2, count, replace=False) + 2)
             rng.shuffle(idx)
 
-        text = 'Undirected graph with ' if self.ds_mode <= 1 else ''
+        text = 'Remote sensing image with the following description: ' + str(description)
         tag = [0] * len(property_list)
         for i in idx:
             tag[i] = 1
-            text += self._get_property_str_fn()[i](property_list[i]) + ', '
-        text = text[:-2] + '.'
         for i in range(len(property_list)):
             if tag[i] == 0:
                 property_list[i] = None
 
         property_tuple = tuple(property_list)
         return text, property_tuple
-
-    def _encode_text(self, text):
-        return self.tokenizer(text, add_special_tokens=True, truncation=False, max_length=self.max_len, padding='max_length')
 
     def __getitem__(self, index):
         adj_matrix = self.adj_matrix[index]
@@ -122,7 +120,7 @@ class SyntheticGraphDataset(data.Dataset):
             rng = None
         node_inp = np.zeros((self.max_node,))
         node_inp[:self.properties[index]['n']] = 1
-        text_desc, properties = self._gen_text(self.properties[index], rng=rng)
+        text_desc, properties = self._gen_text(self.properties[index], self.descriptions, rng=rng)
         encoded_text = self._encode_text(text_desc)
 
         return adj_matrix, node_inp, encoded_text, text_desc, properties

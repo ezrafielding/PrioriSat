@@ -4,11 +4,11 @@ import os
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.join(os.path.dirname(SCRIPT_DIR), 'GraphGen'))
 
-from recognize import *
+from GraphGen.recognize import *
 import re
 import numpy as np
 from joblib import Parallel, delayed
-from graph_data import SyntheticGraphDataset
+from LicGan.graph_data import SyntheticGraphDataset
     
 def score(props, adj_mat_hat, nodes_hat):
     def _get_score(prop, adj, node):

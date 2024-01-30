@@ -117,23 +117,23 @@ train_properties = gen_properties(train_adjs)
 test_properties = gen_properties(test_adjs)
 val_properties = gen_properties(val_adjs)
 
-with open(os.path.join('../datasets/NWPU-Captions/train', 'graphs.pkl'), 'wb') as f:
+with open(os.path.join('../datasets/NWPU-Captions/NWPU_Graphs/train', 'graphs.pkl'), 'wb') as f:
     pickle.dump(train_adjs, f)
-with open(os.path.join('../datasets/NWPU-Captions/train', 'properties.pkl'), 'wb') as f:
+with open(os.path.join('../datasets/NWPU-Captions/NWPU_Graphs/train', 'properties.pkl'), 'wb') as f:
     pickle.dump(train_properties, f)
-with open(os.path.join('../datasets/NWPU-Captions/train', 'descriptions.pkl'), 'wb') as f:
+with open(os.path.join('../datasets/NWPU-Captions/NWPU_Graphs/train', 'descriptions.pkl'), 'wb') as f:
     pickle.dump(train_desc, f)
 
-with open(os.path.join('../datasets/NWPU-Captions/test', 'graphs.pkl'), 'wb') as f:
+with open(os.path.join('../datasets/NWPU-Captions/NWPU_Graphs/test', 'graphs.pkl'), 'wb') as f:
     pickle.dump(test_adjs, f)
-with open(os.path.join('../datasets/NWPU-Captions/test', 'properties.pkl'), 'wb') as f:
+with open(os.path.join('../datasets/NWPU-Captions/NWPU_Graphs/test', 'properties.pkl'), 'wb') as f:
     pickle.dump(test_properties, f)
-with open(os.path.join('../datasets/NWPU-Captions/test', 'descriptions.pkl'), 'wb') as f:
+with open(os.path.join('../datasets/NWPU-Captions/NWPU_Graphs/test', 'descriptions.pkl'), 'wb') as f:
     pickle.dump(test_desc, f)
 
-with open(os.path.join('../datasets/NWPU-Captions/val', 'graphs.pkl'), 'wb') as f:
+with open(os.path.join('../datasets/NWPU-Captions/NWPU_Graphs/val', 'graphs.pkl'), 'wb') as f:
     pickle.dump(val_adjs, f)
-with open(os.path.join('../datasets/NWPU-Captions/val', 'properties.pkl'), 'wb') as f:
+with open(os.path.join('../datasets/NWPU-Captions/NWPU_Graphs/val', 'properties.pkl'), 'wb') as f:
     pickle.dump(val_properties, f)
-with open(os.path.join('../datasets/NWPU-Captions/val', 'descriptions.pkl'), 'wb') as f:
+with open(os.path.join('../datasets/NWPU-Captions/NWPU_Graphs/val', 'descriptions.pkl'), 'wb') as f:
     pickle.dump(val_desc, f)

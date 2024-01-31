@@ -31,7 +31,7 @@ class SyntheticGraphDataset(data.Dataset):
 
         assert len(self.adj_matrix) == len(self.properties)
         assert len(self.adj_matrix) == len(self.descriptions)
-
+        
         for i in range(len(self.adj_matrix)):
             node_size = self.adj_matrix[i].shape[0]
             if node_size > max_node:
@@ -91,15 +91,6 @@ class SyntheticGraphDataset(data.Dataset):
 
     def _gen_text(self, property, description, rng=None):
         property_list = self._get_property_list(property)
-        # keeps node number and edges compulsorily (can change behavior by changing idx line alone)
-        if rng is None:
-            count = np.random.randint(2, 8) # [l, r)
-            idx = [0,1] + list(np.random.choice(len(property_list) - 2, count, replace=False) + 2)
-            np.random.shuffle(idx)
-        else:
-            count = rng.random_integers(2, 7) # [l, r]
-            idx = [0,1] + list(rng.choice(len(property_list) - 2, count, replace=False) + 2)
-            rng.shuffle(idx)
 
         text = 'Remote sensing image with the following description: ' + str(description)
         tag = [0] * len(property_list)
@@ -144,7 +135,7 @@ def get_loaders(data_dir, max_node, max_len, model_name, batch_size, num_workers
     train = SyntheticGraphDataset(os.path.join(data_dir, 'train'), max_node, max_len, model_name, ds_mode)
     val = SyntheticGraphDataset(os.path.join(data_dir, 'dev'), max_node, max_len, model_name, ds_mode)
     test = SyntheticGraphDataset(os.path.join(data_dir, 'test'), max_node, max_len, model_name, ds_mode, base_seed=0)
-    
+
     train_loader = data.DataLoader(dataset=train,
                                    batch_size=batch_size,
                                    shuffle=True,

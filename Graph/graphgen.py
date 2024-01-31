@@ -4,6 +4,8 @@ from GraphGen.gen import nxgraph_to_adj_matrix, gen_properties
 import json
 import os
 import pickle
+from networkx.algorithms.shortest_paths.weighted import single_source_dijkstra
+
 
 def weight_boundary(graph, src, dst, n):
     """
@@ -90,7 +92,21 @@ for classname in text_data:
                                         in_place_merge=True,
                                         merge_func=merge_boundary,
                                         weight_func=weight_boundary)
+        while g.number_of_nodes() > 50:
+            min_weight = []
+            for u, v, weight in g.edges(data='weight', default=0):
+                min_weight.append(weight)
+            min_weight = set(min_weight)
+            if len(min_weight) < 2:
+                thresh = sorted(min_weight)[0] + 0.001
+            else:
+                thresh = sorted(min_weight)[1]
+            labels2 = graph.merge_hierarchical(labels, g, thresh=thresh, rag_copy=False,
+                                        in_place_merge=True,
+                                        merge_func=merge_boundary,
+                                        weight_func=weight_boundary)
         adj = nxgraph_to_adj_matrix(g)
+
         if entry['split'] == 'train':
             for i in range(5): train_adjs.append(adj)
             train_desc.append(entry['raw'])

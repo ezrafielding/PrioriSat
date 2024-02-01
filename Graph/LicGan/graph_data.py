@@ -91,17 +91,29 @@ class SyntheticGraphDataset(data.Dataset):
 
     def _gen_text(self, property, description, rng=None):
         property_list = self._get_property_list(property)
+        # # keeps node number and edges compulsorily (can change behavior by changing idx line alone)
+        # if rng is None:
+        #     count = np.random.randint(2, 8) # [l, r)
+        #     idx = [0,1] + list(np.random.choice(len(property_list) - 2, count, replace=False) + 2)
+        #     np.random.shuffle(idx)
+        # else:
+        #     count = rng.random_integers(2, 7) # [l, r]
+        #     idx = [0,1] + list(rng.choice(len(property_list) - 2, count, replace=False) + 2)
+        #     rng.shuffle(idx)
 
         text = 'Remote sensing image with the following description: ' + str(description)
-        tag = [0] * len(property_list)
-        for i in idx:
-            tag[i] = 1
-        for i in range(len(property_list)):
-            if tag[i] == 0:
-                property_list[i] = None
+        # tag = [0] * len(property_list)
+        # for i in idx:
+        #     tag[i] = 1
+        # for i in range(len(property_list)):
+        #     if tag[i] == 0:
+        #         property_list[i] = None
 
         property_tuple = tuple(property_list)
         return text, property_tuple
+
+    def _encode_text(self, text):
+        return self.tokenizer(text, add_special_tokens=True, truncation=False, max_length=self.max_len, padding='max_length')
 
     def __getitem__(self, index):
         adj_matrix = self.adj_matrix[index]
@@ -111,7 +123,7 @@ class SyntheticGraphDataset(data.Dataset):
             rng = None
         node_inp = np.zeros((self.max_node,))
         node_inp[:self.properties[index]['n']] = 1
-        text_desc, properties = self._gen_text(self.properties[index], self.descriptions, rng=rng)
+        text_desc, properties = self._gen_text(self.properties[index], self.descriptions[index], rng=rng)
         encoded_text = self._encode_text(text_desc)
 
         return adj_matrix, node_inp, encoded_text, text_desc, properties

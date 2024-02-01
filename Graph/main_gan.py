@@ -1,15 +1,15 @@
 import os
 import logging
-# import dotenv
+import dotenv
 
-# dotenv.load_dotenv('./.env')
+dotenv.load_dotenv('./.env')
 
 from rdkit import RDLogger
 
 from LicGan.args import get_GAN_config
-# import wandb
+import wandb
 
-# os.environ["WANDB_API_KEY"] = os.getenv("WANDB_API_KEY") # Set your key here for wandb logging
+os.environ["WANDB_API_KEY"] = os.getenv("WANDB_API_KEY") # Set your key here for wandb logging
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 os.environ['PYTORCH_CUDA_ALLOC_CONF'] = 'max_split_size_mb:512'
@@ -72,7 +72,7 @@ def main(config):
 
 
 if __name__ == '__main__':
-    # wandb.login()
+    wandb.login()
     config = get_GAN_config()
 
     main(config)

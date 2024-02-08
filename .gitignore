@@ -175,3 +175,6 @@ YOLO/llama-2*/
 YOLO/detect/
 Graph/wandb/
 Graph/results/
+YOLO/detect/
+YOLO/results/
+wandb/

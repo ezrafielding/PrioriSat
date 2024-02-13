@@ -101,7 +101,7 @@ class SyntheticGraphDataset(data.Dataset):
         #     idx = [0,1] + list(rng.choice(len(property_list) - 2, count, replace=False) + 2)
         #     rng.shuffle(idx)
 
-        text = 'Remote sensing image with the following description: ' + str(description)
+        text = 'A graph representing a remote sensing image with the following description: ' + str(description)
         # tag = [0] * len(property_list)
         # for i in idx:
         #     tag[i] = 1

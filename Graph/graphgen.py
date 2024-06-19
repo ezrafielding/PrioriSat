@@ -4,6 +4,7 @@ from GraphGen.gen import nxgraph_to_adj_matrix, gen_properties
 import json
 import os
 import pickle
+from tqdm import tqdm
 from networkx.algorithms.shortest_paths.weighted import single_source_dijkstra
 
 
@@ -79,7 +80,7 @@ val_properties = []
 for classname in text_data:
     print("Current class: ", classname)
     class_path = os.path.join(base_path, classname)
-    for entry in text_data[classname]:
+    for entry in tqdm(text_data[classname]):
         try:
             img = io.imread(os.path.join(class_path, entry['filename']))
         except:

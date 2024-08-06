@@ -178,3 +178,4 @@ Graph/results/
 YOLO/detect/
 YOLO/results/
 wandb/
+CLIP/logs/

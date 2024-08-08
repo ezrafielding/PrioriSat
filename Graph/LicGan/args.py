@@ -48,6 +48,8 @@ def get_GAN_config():
     # Step size.
     parser.add_argument('--model_save_step', type=int, default=20)
     parser.add_argument('--lr_update_step', type=int, default=1000)
+
+    parser.add_argument('--name', type=str, default='wandb_name')
     
     # For training
     config = parser.parse_args()
@@ -70,9 +72,6 @@ def get_GAN_config():
     #
     config.model_mode = 1
     config.ds_mode = 0
-
-    # Wandb
-    config.name = 'wandb_name'
     
     # Involve bert unfreeze
     config.bert_unfreeze = 0

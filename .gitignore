@@ -179,3 +179,4 @@ YOLO/detect/
 YOLO/results/
 wandb/
 CLIP/logs/
+YOLO/llama2_dota

@@ -20,15 +20,15 @@ for classname in text_data:
     print("Current class: ", classname)
     class_path = os.path.join(base_path, classname)
     for entry in tqdm(text_data[classname]):
-        dataset[entry['split']].append([os.path.join(class_path, entry['filename']), prompt+entry['raw']])
-        dataset[entry['split']].append([os.path.join(class_path, entry['filename']), prompt+entry['raw_1']])
-        dataset[entry['split']].append([os.path.join(class_path, entry['filename']), prompt+entry['raw_2']])
-        dataset[entry['split']].append([os.path.join(class_path, entry['filename']), prompt+entry['raw_3']])
-        dataset[entry['split']].append([os.path.join(class_path, entry['filename']), prompt+entry['raw_4']])
+        dataset[entry['split']].append([os.path.join(class_path, entry['filename']), prompt+entry['raw'], classname])
+        dataset[entry['split']].append([os.path.join(class_path, entry['filename']), prompt+entry['raw_1'], classname])
+        dataset[entry['split']].append([os.path.join(class_path, entry['filename']), prompt+entry['raw_2'], classname])
+        dataset[entry['split']].append([os.path.join(class_path, entry['filename']), prompt+entry['raw_3'], classname])
+        dataset[entry['split']].append([os.path.join(class_path, entry['filename']), prompt+entry['raw_4'], classname])
     
-train_set = pd.DataFrame(dataset['train'], columns=["filepath", "caption"])
-test_set = pd.DataFrame(dataset['test'], columns=["filepath", "caption"])
-val_set = pd.DataFrame(dataset['val'], columns=["filepath", "caption"])
+train_set = pd.DataFrame(dataset['train'], columns=["filepath", "caption", "class"])
+test_set = pd.DataFrame(dataset['test'], columns=["filepath", "caption", "class"])
+val_set = pd.DataFrame(dataset['val'], columns=["filepath", "caption", "class"])
 
 train_set.to_csv('../datasets/NWPU-Captions/train.csv', index=False, sep='\t')
 test_set.to_csv('../datasets/NWPU-Captions/test.csv', index=False, sep='\t')

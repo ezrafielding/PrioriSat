@@ -171,15 +171,15 @@ DOTA_devkit/
 
 # Project Specific
 best_saved_model/
-YOLO/llama-2*/
-YOLO/detect/
+OBB/llama-2*/
+OBB/detect/
 Graph/wandb/
 Graph/results/
-YOLO/detect/
-YOLO/results/
+OBB/detect/
+OBB/results/
 wandb/
 CLIP/logs/
-YOLO/llama2_dota/
+OBB/llama2_dota/
 CLIP/open_clip_repo/
 Satellite/YOLO/
 Satellite/CLIP/

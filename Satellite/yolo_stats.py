@@ -1,7 +1,7 @@
 import wandb
 from ultralytics import YOLO
 
-max_imgsz = 960
+max_imgsz = 1280
 device = 'CM4'
 
 wandb.init(
@@ -15,7 +15,7 @@ wandb.init(
     }
 )
 
-model = YOLO(f'./YOLO/runs/obb/img{max_imgsz}/weights/best.pt')
+model = YOLO(f'./YOLO/img{max_imgsz}/weights/best.pt')
 
 results = model('../datasets/DOTAv1.5/images/test', imgsz=max_imgsz, stream=True)
 
@@ -27,6 +27,7 @@ for result in results:
     postprocess_time = result.speed['postprocess']
 
     avg_speed += preprocess_time + inference_time + postprocess_time
+    total += 1
 
     wandb.log({
         "preprocess_time": preprocess_time,

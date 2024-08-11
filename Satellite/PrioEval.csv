@@ -1,0 +1,101 @@
+filepath	caption	class	class_id
+../datasets/PrioEval/airplane_693.jpg	An aerial photograph with description: A plane is parked on the open space next to the terminal .	airplane	0
+../datasets/PrioEval/ship_649.jpg	An aerial photograph with description: The cargo ship full of containers is docked at the container terminal and another ship is sailing next to it .	ship	1
+../datasets/PrioEval/ship_698.jpg	An aerial photograph with description: An orange-red bulk carrier docked by the dock .	ship	1
+../datasets/PrioEval/airplane_671.jpg	An aerial photograph with description: There are two white planes parked by the lawn .	airplane	0
+../datasets/PrioEval/ship_650.jpg	An aerial photograph with description: A light green tanker docked by the dock .	ship	1
+../datasets/PrioEval/ship_634.jpg	An aerial photograph with description: The ship is at the harbor .	ship	1
+../datasets/PrioEval/ship_689.jpg	An aerial photograph with description: There are several ships at the harbor .	ship	1
+../datasets/PrioEval/basketball_court_646.jpg	An aerial photograph with description: The basketball court is between two lawns,With vegetation nearby .	basketball_court	2
+../datasets/PrioEval/airplane_634.jpg	An aerial photograph with description: A white plane and a gray plane parked at the boarding port  The white plane was about four times as large as the gray one .	airplane	0
+../datasets/PrioEval/airplane_658.jpg	An aerial photograph with description: There are many planes of different sizes in a clearing .	airplane	0
+../datasets/PrioEval/basketball_court_653.jpg	An aerial photograph with description: Many buildings are near the basketball courts .	basketball_court	2
+../datasets/PrioEval/airplane_663.jpg	An aerial photograph with description: Five planes are on the marked ground .	airplane	0
+../datasets/PrioEval/ship_667.jpg	An aerial photograph with description: Many buildings of different shapes are beside the ship .	ship	1
+../datasets/PrioEval/airplane_664.jpg	An aerial photograph with description: Two planes are parked on the open space next to the terminal .	airplane	0
+../datasets/PrioEval/ship_658.jpg	An aerial photograph with description: There are two ships surrounded by green water .	ship	1
+../datasets/PrioEval/airplane_667.jpg	An aerial photograph with description: Several planes of different sizes are parked in a clearing, With many buildings next to the plane .	airplane	0
+../datasets/PrioEval/airplane_632.jpg	An aerial photograph with description: Four planes of different sizes were on the marked ground .	airplane	0
+../datasets/PrioEval/ship_696.jpg	An aerial photograph with description: The ship is docked next to an oval building and the water is dark green .	ship	1
+../datasets/PrioEval/basketball_court_634.jpg	An aerial photograph with description: There is a path beside the basketball court .	basketball_court	2
+../datasets/PrioEval/basketball_court_699.jpg	An aerial photograph with description: Two basketball courts on the lawn and some buildings beside .	basketball_court	2
+../datasets/PrioEval/basketball_court_689.jpg	An aerial photograph with description: A red building is beside two basketball courts .	basketball_court	2
+../datasets/PrioEval/ship_681.jpg	An aerial photograph with description: The orange cargo ship is docked next to a forest and the water is yellow .	ship	1
+../datasets/PrioEval/bridge_672.jpg	An aerial photograph with description: A slender, Straight bridge connects the land on both sides of the meandering river  The river is lined with long yellow banks and many buildings and roads on the land .	bridge	3
+../datasets/PrioEval/airplane_650.jpg	An aerial photograph with description: There were four white aircraft on the ground, One of which was not on the same line as the other three .	airplane	0
+../datasets/PrioEval/basketball_court_696.jpg	An aerial photograph with description: Two basketball courts are surrounded by grass .	basketball_court	2
+../datasets/PrioEval/ship_632.jpg	An aerial photograph with description: The grass is beside the ship .	ship	1
+../datasets/PrioEval/bridge_695.jpg	An aerial photograph with description: There are some buildings beside the bridge .	bridge	3
+../datasets/PrioEval/basketball_court_681.jpg	An aerial photograph with description: Many cars are in the parking lot next to the basketball courts .	basketball_court	2
+../datasets/PrioEval/basketball_court_684.jpg	An aerial photograph with description: Beside the basketball courts on the lawn there is a parking lot and some buildings .	basketball_court	2
+../datasets/PrioEval/ship_687.jpg	An aerial photograph with description: The green ship is at the harbor .	ship	1
+../datasets/PrioEval/bridge_696.jpg	An aerial photograph with description: A bridge built on a dark green river and some harbors on both sides of the river .	bridge	3
+../datasets/PrioEval/bridge_698.jpg	An aerial photograph with description: A bridge connects the land on both sides of the turquoise water  There are three roads on one side of the bridge  There are many buildings and roads on the land .	bridge	3
+../datasets/PrioEval/bridge_681.jpg	An aerial photograph with description: A bridge built on a dark green river and some green plants on both sides of the river .	bridge	3
+../datasets/PrioEval/basketball_court_693.jpg	An aerial photograph with description: A row of basketball courts separates the lawn and buildings .	basketball_court	2
+../datasets/PrioEval/bridge_658.jpg	An aerial photograph with description: Numerous trees are around the bridges .	bridge	3
+../datasets/PrioEval/airplane_661.jpg	An aerial photograph with description: A plane parked on the open area and some buildings beside .	airplane	0
+../datasets/PrioEval/basketball_court_670.jpg	An aerial photograph with description: Many trees are near the basketball court .	basketball_court	2
+../datasets/PrioEval/airplane_689.jpg	An aerial photograph with description: There is a plane and several cars on the open ground .	airplane	0
+../datasets/PrioEval/airplane_698.jpg	An aerial photograph with description: Five planes are parked on the runway .	airplane	0
+../datasets/PrioEval/bridge_634.jpg	An aerial photograph with description: Both sides of the river are bare land .	bridge	3
+../datasets/PrioEval/airplane_699.jpg	An aerial photograph with description: Three planes were in the clearing next to the buildings .	airplane	0
+../datasets/PrioEval/ship_663.jpg	An aerial photograph with description: The ships are surrounded by green water .	ship	1
+../datasets/PrioEval/ship_695.jpg	An aerial photograph with description: The cargo ship full of containers is docked at the cargo terminal and a white building is on the bank .	ship	1
+../datasets/PrioEval/basketball_court_661.jpg	An aerial photograph with description: Many cars are in the parking lot next to the basketball courts .	basketball_court	2
+../datasets/PrioEval/bridge_670.jpg	An aerial photograph with description: There are many buildings beside the bridges .	bridge	3
+../datasets/PrioEval/ship_670.jpg	An aerial photograph with description: The cargo ship is docked at the cargo terminal and some workshops are on the bank .	ship	1
+../datasets/PrioEval/basketball_court_663.jpg	An aerial photograph with description: There is a basketball court surrounded by many buildings and trees .	basketball_court	2
+../datasets/PrioEval/bridge_689.jpg	An aerial photograph with description: On one side of the river are vegetation and on the other side are settlements .	bridge	3
+../datasets/PrioEval/airplane_672.jpg	An aerial photograph with description: Several planes of different sizes are neatly parked beside buildings in the airport .	airplane	0
+../datasets/PrioEval/ship_656.jpg	An aerial photograph with description: The purple ship is docked at the dock and some cars are on the dock .	ship	1
+../datasets/PrioEval/basketball_court_667.jpg	An aerial photograph with description: There is a swimming pool and some buildings beside the playground with several basketball courts .	basketball_court	2
+../datasets/PrioEval/basketball_court_698.jpg	An aerial photograph with description: Some basketball courts next to some badminton courts and a parking lot beside .	basketball_court	2
+../datasets/PrioEval/bridge_646.jpg	An aerial photograph with description: There are many cars on the bridges .	bridge	3
+../datasets/PrioEval/bridge_632.jpg	An aerial photograph with description: The two Bridges are over the river .	bridge	3
+../datasets/PrioEval/bridge_693.jpg	An aerial photograph with description: There are many cars on the bridges .	bridge	3
+../datasets/PrioEval/ship_664.jpg	An aerial photograph with description: Several orange-red, Green bulk carriers docked at the dock with powdery materials on the dock .	ship	1
+../datasets/PrioEval/basketball_court_650.jpg	An aerial photograph with description: There are several basketball courts on the left .	basketball_court	2
+../datasets/PrioEval/ship_647.jpg	An aerial photograph with description: Several ships are docked at the dock and the water is dark green .	ship	1
+../datasets/PrioEval/bridge_684.jpg	An aerial photograph with description: There is a bridge with some boats over the river .	bridge	3
+../datasets/PrioEval/bridge_664.jpg	An aerial photograph with description: A bridge connects the residential areas on both sides of the strait .	bridge	3
+../datasets/PrioEval/bridge_653.jpg	An aerial photograph with description: Two bridges built on a dark green river and the residential area on one side of the river, And some green plants on the other side of the river .	bridge	3
+../datasets/PrioEval/basketball_court_671.jpg	An aerial photograph with description: There is a basketball court in the lower left corner .	basketball_court	2
+../datasets/PrioEval/airplane_670.jpg	An aerial photograph with description: Two planes with the purple marks parked next to boarding bridges .	airplane	0
+../datasets/PrioEval/basketball_court_649.jpg	An aerial photograph with description: The basketball courts next to the buildings and parking lots are adjacent to the lake .	basketball_court	2
+../datasets/PrioEval/airplane_656.jpg	An aerial photograph with description: One plane is on the ground next to the building .	airplane	0
+../datasets/PrioEval/bridge_667.jpg	An aerial photograph with description: A bridge built on a dark green river and the flood bed of the river while the residential area on one side of the river .	bridge	3
+../datasets/PrioEval/bridge_661.jpg	An aerial photograph with description: A bridge connects the land on both sides of the turquoise river, With long yellow banks on both sides of the river .	bridge	3
+../datasets/PrioEval/bridge_647.jpg	An aerial photograph with description: There are many cars on the bridges .	bridge	3
+../datasets/PrioEval/ship_661.jpg	An aerial photograph with description: The orange cargo ship is docked at the cargo terminal and the water is dark green .	ship	1
+../datasets/PrioEval/bridge_663.jpg	An aerial photograph with description: There is a white sign on the bridge .	bridge	3
+../datasets/PrioEval/bridge_671.jpg	An aerial photograph with description: Most of the area the bridge crosses is bare land .	bridge	3
+../datasets/PrioEval/basketball_court_687.jpg	An aerial photograph with description: There are many basketball courts on the open place .	basketball_court	2
+../datasets/PrioEval/airplane_681.jpg	An aerial photograph with description: Many of the planes are parked on the open space next to the bare land .	airplane	0
+../datasets/PrioEval/basketball_court_656.jpg	An aerial photograph with description: Many trees are near the basketball courts .	basketball_court	2
+../datasets/PrioEval/airplane_687.jpg	An aerial photograph with description: Eight planes were in the clearing next to the buildings .	airplane	0
+../datasets/PrioEval/airplane_696.jpg	An aerial photograph with description: Two planes of the same size parked neatly next to the buildings inside the airport .	airplane	0
+../datasets/PrioEval/bridge_650.jpg	An aerial photograph with description: A bridge built on a dark green river and the flood bed of the river while some boats docked on one side of the river .	bridge	3
+../datasets/PrioEval/bridge_699.jpg	An aerial photograph with description: There is a bridge over the river between the farmlands .	bridge	3
+../datasets/PrioEval/ship_672.jpg	An aerial photograph with description: There is a ship in the black water on the shore .	ship	1
+../datasets/PrioEval/basketball_court_658.jpg	An aerial photograph with description: There is a basketball court in the middle of grass by the road .	basketball_court	2
+../datasets/PrioEval/ship_693.jpg	An aerial photograph with description: There are four ships on the river .	ship	1
+../datasets/PrioEval/bridge_687.jpg	An aerial photograph with description: A bridge connects the residential areas on both sides of the strait .	bridge	3
+../datasets/PrioEval/basketball_court_647.jpg	An aerial photograph with description: Two basketball courts are surrounded by grass .	basketball_court	2
+../datasets/PrioEval/basketball_court_695.jpg	An aerial photograph with description: A basketball court is next to a parking lot and a white building with a road pass by .	basketball_court	2
+../datasets/PrioEval/airplane_695.jpg	An aerial photograph with description: Here is a plane with a yellow fuselage and grey wings .	airplane	0
+../datasets/PrioEval/airplane_646.jpg	An aerial photograph with description: Many gray planes are parked on the bare ground and on the runway .	airplane	0
+../datasets/PrioEval/ship_653.jpg	An aerial photograph with description: Several ships of different sizes and shapes are at sea .	ship	1
+../datasets/PrioEval/bridge_656.jpg	An aerial photograph with description: The bridge made a turn as it approached the shore and the water under the bridge is clear .	bridge	3
+../datasets/PrioEval/airplane_647.jpg	An aerial photograph with description: A plane parked on the airport and a plane with the red mark on the runway .	airplane	0
+../datasets/PrioEval/airplane_649.jpg	An aerial photograph with description: There were three white aircraft on the ground, One of which was not on the same line as the other two .	airplane	0
+../datasets/PrioEval/bridge_649.jpg	An aerial photograph with description: There is a bridge over the river next to many trees .	bridge	3
+../datasets/PrioEval/airplane_653.jpg	An aerial photograph with description: There were one white aircraft on the ground .	airplane	0
+../datasets/PrioEval/ship_699.jpg	An aerial photograph with description: Several buildings of different shapes are beside the ship .	ship	1
+../datasets/PrioEval/basketball_court_664.jpg	An aerial photograph with description: The basketball court is surrounded by several big trees .	basketball_court	2
+../datasets/PrioEval/ship_671.jpg	An aerial photograph with description: There are two ships in the blue water on the shore .	ship	1
+../datasets/PrioEval/ship_684.jpg	An aerial photograph with description: A red and blue boat docked by the dock .	ship	1
+../datasets/PrioEval/basketball_court_632.jpg	An aerial photograph with description: There are several basketball courts on the vacant lot .	basketball_court	2
+../datasets/PrioEval/airplane_684.jpg	An aerial photograph with description: Two planes parked in a clearing, With many buildings and lawns next to the plane .	airplane	0
+../datasets/PrioEval/basketball_court_672.jpg	An aerial photograph with description: Two basketball courts next to the vacant lot and some recreational facilities beside .	basketball_court	2
+../datasets/PrioEval/ship_646.jpg	An aerial photograph with description: There are two red ships and a green ship on the river .	ship	1

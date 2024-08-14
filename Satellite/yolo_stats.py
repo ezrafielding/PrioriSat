@@ -1,5 +1,35 @@
 import wandb
 from ultralytics import YOLO
+import time
+import psutil
+import threading
+
+def log_usage(interval=1):
+    while True:
+        # Get current time
+        now = time.time()
+        
+        # Get CPU and memory usage
+        cpu_usage = psutil.cpu_percent(interval=0.1)
+        memory_info = psutil.virtual_memory()
+        memory_usage = memory_info.used / 1024 / 1024
+        cpu_freq = psutil.cpu_freq().current
+        
+        # Log to Weights & Biases
+        wandb.log({"CPU Usage (%)": cpu_usage, "CPU Frequency (MHz)": cpu_freq, "Memory Usage (MB)": memory_usage, "Timestamp": now})
+        
+        # Wait for the next interval
+        time.sleep(interval)
+
+def start_wandb_logging(interval=1):
+    # Create a thread for the log_usage function
+    logging_thread = threading.Thread(target=log_usage, args=(interval,))
+    
+    # Set the thread as a daemon so it exits when the main program does
+    logging_thread.daemon = True
+    
+    # Start the thread
+    logging_thread.start()
 
 max_imgsz = 1280
 device = 'CM4'
@@ -14,6 +44,8 @@ wandb.init(
     'device': device
     }
 )
+
+start_wandb_logging(interval=1)
 
 model = YOLO(f'./YOLO/img{max_imgsz}/weights/best.pt')
 

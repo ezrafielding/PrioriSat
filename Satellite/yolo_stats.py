@@ -5,7 +5,8 @@ import psutil
 import threading
 
 def log_usage(interval=1):
-    while True:
+    global stop_threads
+    while not stop_threads:
         # Get current time
         now = time.time()
         
@@ -45,6 +46,7 @@ wandb.init(
     }
 )
 
+stop_threads = False
 start_wandb_logging(interval=1)
 
 model = YOLO(f'./YOLO/img{max_imgsz}/weights/best.pt')
@@ -72,4 +74,7 @@ avg_speed = avg_speed / total
 wandb.log({"avg_speed": avg_speed})
 
 print(f'Average Speed for imgsz {max_imgsz}: ', avg_speed)
+time.sleep(5)
+stop_threads = True
+time.time(1)
 wandb.finish()

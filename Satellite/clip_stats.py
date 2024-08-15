@@ -14,7 +14,8 @@ base_model = 'ViT-B-16'
 device = 'CM4'
 
 def log_usage(interval=1):
-    while True:
+    global stop_threads
+    while not stop_threads:
         # Get current time
         now = time.time()
         
@@ -50,6 +51,8 @@ wandb.init(
     'device': device
     }
 )
+
+stop_threads = False
 
 start_wandb_logging(interval=1)
 
@@ -95,4 +98,7 @@ wandb.run.summary["sim_time"] = sim_time
 with open(f'./CLIP/sim_{base_model}_{device}.pkl', 'wb') as file:
     pickle.dump(similarity, file)
 
+time.sleep(5)
+stop_threads = True
+time.sleep(2)
 wandb.finish()

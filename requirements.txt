@@ -1,1 +1,16 @@
+matplotlib==3.8.2
+numpy==2.1.0
+pandas==2.2.2
+peft==0.12.0
+Pillow==10.1.0
+Pillow==10.4.0
+psutil==5.9.6
+psutil==5.9.0
+scikit_learn==1.5.1
+scipy==1.14.1
+torch==2.1.1
+tqdm==4.66.1
+transformers==4.44.2
+trl==0.10.1
 ultralytics==8.0.220
+open_clip_torch[training]

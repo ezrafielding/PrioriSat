@@ -1,0 +1,71 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  Flexible Natural Language-Based Image Data  Downlink
+  Prioritization for Nanosatellites
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Ezra
+    family-names: Fielding
+    email: fielding.ezra455@mail.kyutech.jp
+    affiliation: Kyushu Institute of Technology
+    orcid: 'https://orcid.org/0000-0002-7936-0222'
+  - given-names: Akitoshi
+    family-names: Hanazawa
+    email: hanazawa@mns.kyutech.ac.jp
+    affiliation: Kyushu Institute of Technology
+identifiers:
+  - type: doi
+    value: 10.3390/aerospace11110888
+    description: The DOI of the work.
+repository-code: 'https://github.com/ezrafielding/PrioriSat'
+url: 'https://www.mdpi.com/2226-4310/11/11/888'
+abstract: >-
+  Nanosatellites increasingly produce more data than can be
+  downlinked within a reasonable time due to their limited
+  bandwidth and power. Therefore, an on-board system is
+  required to prioritize scientifically significant data for
+  downlinking, as described by scientists. This paper
+  determines whether natural language processing can be used
+  to prioritize remote sensing images on CubeSats with more
+  flexibility compared to existing methods. Two approaches
+  implementing the same conceptual prioritization pipeline
+  are compared. The first uses YOLOv8 and Llama2 to extract
+  image features and compare them with text descriptions via
+  cosine similarity. The second approach employs CLIP,
+  fine-tuned on remote sensing data, to achieve the same.
+  Both approaches are evaluated on real nanosatellite
+  hardware, the VERTECS Camera Control Board. The CLIP
+  approach, particularly the ResNet50-based model, shows the
+  best performance in prioritizing and sequencing remote
+  sensing images. This paper demonstrates that on-orbit
+  prioritization using natural language descriptions is
+  viable and allows for more flexibility than existing
+  methods.
+license: MIT
+date-released: '2024-10-28'
+preferred-citation:
+  type: article
+  authors:
+  - given-names: Ezra
+    family-names: Fielding
+    email: fielding.ezra455@mail.kyutech.jp
+    affiliation: Kyushu Institute of Technology
+    orcid: 'https://orcid.org/0000-0002-7936-0222'
+  - given-names: Akitoshi
+    family-names: Hanazawa
+    email: hanazawa@mns.kyutech.ac.jp
+    affiliation: Kyushu Institute of Technology
+  doi: "10.3390/aerospace11110888"
+  journal: "Aerospace"
+  month: 10
+  start: 888
+  title: "Flexible Natural Language-Based Image Data Downlink Prioritization for Nanosatellites"
+  issue: 11
+  volume: 11
+  year: 2024

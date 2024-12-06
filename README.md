@@ -11,10 +11,14 @@ Uses fine-tuned YOLOv8 and Llama2 models as image and text feature extractors, r
 
 Two YOLOv8 models with different image input sizes were trained (960 px and 1280 px).
 
+![OBB Pipeline](https://www.mdpi.com/aerospace/aerospace-11-00888/article_deploy/html/images/aerospace-11-00888-g002.png)
+
 ## CLIP Approach
 Uses CLIP fine-tuned for RS images.
 
 ResNet50 and ViT-B-16 -based CLIP models were trained.
+
+![CLIP Pipeline](https://www.mdpi.com/aerospace/aerospace-11-00888/article_deploy/html/images/aerospace-11-00888-g004.png)
 
 ## Datasets
 - DOTA-v1.5: https://captain-whu.github.io/DOTA/index.html

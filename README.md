@@ -4,6 +4,8 @@
 ## Abstract
 Nanosatellites increasingly produce more data than can be downlinked within a reasonable time due to their limited bandwidth and power. Therefore, an on-board system is required to prioritize scientifically significant data for downlinking, as described by scientists. This paper determines whether natural language processing can be used to prioritize remote sensing images on CubeSats with more flexibility compared to existing methods. Two approaches implementing the same conceptual prioritization pipeline are compared. The first uses YOLOv8 and Llama2 to extract image features and compare them with text descriptions via cosine similarity. The second approach employs CLIP, fine-tuned on remote sensing data, to achieve the same. Both approaches are evaluated on real nanosatellite hardware, the VERTECS Camera Control Board. The CLIP approach, particularly the ResNet50-based model, shows the best performance in prioritizing and sequencing remote sensing images. This paper demonstrates that on-orbit prioritization using natural language descriptions is viable and allows for more flexibility than existing methods.
 
+![Prioritization Pipeline](https://www.mdpi.com/aerospace/aerospace-11-00888/article_deploy/html/images/aerospace-11-00888-g001.png)
+
 ## Oriented Bounding Box (OBB) Approach
 Uses fine-tuned YOLOv8 and Llama2 models as image and text feature extractors, respectively.
 
